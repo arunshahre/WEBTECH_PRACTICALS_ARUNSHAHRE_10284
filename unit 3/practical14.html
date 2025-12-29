@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+    <script>
+        function hey() {
+            document.write("Hello Everyone <br>I am arun shahre <br>");
+        }
+        hey();
+
+        function add(a, b) {
+            return a + b;
+        }
+        document.write("Sum: " + add(10, 73) + "<br>");
+
+        function showScope() {
+            var x = 50;
+            let y = 60;
+            const z = 110;
+            document.write(x, y, z);
+        }
+
+        document.write("<br>Scope Variables: <br>");
+        showScope();
+        document.write(x); // x is not defined here due to function scope
+        document.write(y);
+        document.write(z);
+    </script>
+
+</body>
+</html>

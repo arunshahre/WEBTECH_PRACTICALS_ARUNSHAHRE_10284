@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Selectors</title>
+    <style>
+        * {
+            font-family: Arial;
+        }
+        .note {
+            background-color: lightyellow;
+            padding: 10px;
+        }
+        #important {
+            color: red;
+            font-weight: bold;
+        }
+        h2, p {
+            margin-bottom: 10px;
+        }
+        .box p {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Selectors Example</h1>
+    <p class="note">This paragraph is styled using a <b>class selector</b>.</p>
+    <p id="important">This text uses an <b>ID selector</b>.</p>
+    
+    <div class="box">
+        <h2>Inside a Box</h2>
+        <p>This paragraph is styled using a <b>descendant selector</b> (.box p).</p>
+    </div>
+</body>
+</html>

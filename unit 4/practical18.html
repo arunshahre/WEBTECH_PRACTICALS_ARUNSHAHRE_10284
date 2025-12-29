@@ -1,0 +1,27 @@
+PRACTICAL 18:-
+<!DOCTYPE html>
+<html>
+<body>
+    <input type="text" id="itemInput" placeholder="Type something...">
+    <button onclick="addItem()">Add to List</button>
+    <ul id="dynamicList">
+        <li>Click an item to remove it.</li>
+    </ul>
+    <script>
+        function addItem() {
+            const input = document.getElementById('itemInput');
+            const list = document.getElementById('dynamicList');
+            if (input.value.trim() !== "") {
+                const li = document.createElement('li');
+                li.textContent = input.value;
+                li.addEventListener('click', function() {
+                    this.remove(); 
+                });
+                list.appendChild(li);
+                input.value = "";
+            }
+        }
+    </script>
+
+</body>
+</html>

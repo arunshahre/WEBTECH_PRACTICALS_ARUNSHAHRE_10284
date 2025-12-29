@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .hidden {
+            display: none;
+        }
+        .highlight {
+            background-color: yellow;
+            border: 2px solid orange;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2 id="myText">Click the buttons to change me!</h2>
+    <button onclick="toggleVisibility()">Show/Hide</button>
+    <button onclick="toggleStyle()">Toggle Highlight</button>
+    <script>
+        function toggleVisibility() {
+            const element = document.getElementById("myText");
+            element.classList.toggle("hidden");
+        }
+        function toggleStyle() {
+            const element = document.getElementById("myText");
+            element.classList.toggle("highlight");
+        }
+    </script>
+
+</body>
+</html>

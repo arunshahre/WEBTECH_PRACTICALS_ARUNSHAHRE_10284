@@ -1,0 +1,26 @@
+PRACTICAL 17:-<!DOCTYPE html>
+<html>
+<body>
+
+    <div id="target" style="width:200px; height:200px; background:lightblue; text-align:center; padding-top:80px;">
+        Interact with me!
+    </div>
+    <p id="status">Events will show here</p>
+    <script>
+        const target = document.getElementById('target');
+        const status = document.getElementById('status');
+        target.addEventListener('mouseenter', () => {
+            target.style.background = "lightgreen";
+            status.innerText = "Status: Mouse Entered";
+        });
+        target.addEventListener('mouseleave', () => {
+            target.style.background = "lightblue";
+            status.innerText = "Status: Mouse Left";
+        });
+        target.addEventListener('mousedown', () => {
+            target.innerText = "Clicked!";
+        });
+    </script>
+
+</body>
+</html>

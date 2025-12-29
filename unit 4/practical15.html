@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<body>
+    <form onsubmit="return s()" border="2px solid black">
+        <input id="n" placeholder="Name">
+        <br>
+        <input id="e" type="email" placeholder="Email">
+        <br>
+        <input id="p" type="password" placeholder="Password">
+        <br><br>
+        <button style="background-color: rgb(46, 246, 28);">Submit</button>
+    </form>
+
+    <script>
+        function s() {
+            // Check if Name is empty
+            if (!n.value) return alert('Name'), false;
+            
+            // Check if Email format is valid
+            if (!e.checkValidity()) return alert('Email'), false;
+            
+            // Check if Password is at least 6 characters
+            if (p.value.length < 6) return alert('Password'), false;
+            
+            alert('OK'); 
+            return true;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<html>
+<head>
+    <title>Registration Form</title>
+</head>
+<body>
+    <h2>Registration Form</h2>
+    <form>
+        <label for="fullname">Full Name:</label><br>
+        <input type="text" id="fullname" name="fullname" required><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label><br>
+        <input type="radio" id="other" name="gender" value="Other">
+        <label for="other">Other</label><br><br>
+
+        <label>Preferred Contact Method:</label><br>
+        <input type="checkbox" id="contactEmail" name="contact[]" value="Email">
+        <label for="contactEmail">Email</label><br>
+        <input type="checkbox" id="contactPhone" name="contact[]" value="Phone">
+        <label for="contactPhone">Phone</label><br>
+        <input type="checkbox" id="contactSMS" name="contact[]" value="SMS">
+        <label for="contactSMS">SMS</label><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
